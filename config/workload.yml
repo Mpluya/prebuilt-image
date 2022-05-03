@@ -1,0 +1,9 @@
+apiVersion: carto.run/v1alpha1
+kind: Workload
+metadata:
+  labels:
+    apps.tanzu.vmware.com/workload-type: web
+  name: prebuilt-image
+  namespace: mck-pov
+spec:
+  image: tapsme/special-spring-boot-app:0.0.2
